@@ -8,10 +8,5 @@ namespace GalacticRim
     {
         public static TraitDef GR_ForceSensitive;
         public static AbilityDef GR_ForcePush;
-
-        static GR_DefOf()
-        {
-            DefOfHelper.EnsureInitialized();
-        }
     }
 }

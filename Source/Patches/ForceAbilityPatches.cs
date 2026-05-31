@@ -25,12 +25,17 @@ namespace GalacticRim
     [HarmonyPatch(typeof(TraitSet), nameof(TraitSet.GainTrait))]
     public static class TraitSet_GainTrait_Patch
     {
+        private static readonly System.Reflection.FieldInfo PawnField =
+            AccessTools.Field(typeof(TraitSet), "pawn");
+
         public static void Postfix(TraitSet __instance, Trait trait)
         {
-            if (trait?.def == GR_DefOf.GR_ForceSensitive)
+            if (trait?.def != GR_DefOf.GR_ForceSensitive || PawnField == null)
             {
-                ForceAbilityUtility.TryGrantForcePush(__instance.pawn);
+                return;
             }
+
+            ForceAbilityUtility.TryGrantForcePush((Pawn)PawnField.GetValue(__instance));
         }
     }
 }

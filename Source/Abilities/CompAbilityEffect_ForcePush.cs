@@ -1,3 +1,4 @@
+using System;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -38,7 +39,7 @@ namespace GalacticRim
 
             victim.stances?.stunner?.StunFor(Props.stunTicks, caster, addBattleLog: true);
 
-            IntVec3 pushDir = (victim.Position - caster.Position).SignVector;
+            IntVec3 pushDir = GetPushDirection(caster.Position, victim.Position);
             if (pushDir == IntVec3.Zero)
             {
                 pushDir = caster.Rotation.FacingCell;
@@ -62,6 +63,17 @@ namespace GalacticRim
             }
 
             MoteMaker.ThrowText(victim.DrawPos, map, "Force push!", Color.cyan);
+        }
+
+        private static IntVec3 GetPushDirection(IntVec3 from, IntVec3 to)
+        {
+            IntVec3 delta = to - from;
+            if (delta.x == 0 && delta.z == 0)
+            {
+                return IntVec3.Zero;
+            }
+
+            return new IntVec3(Math.Sign(delta.x), 0, Math.Sign(delta.z));
         }
 
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
