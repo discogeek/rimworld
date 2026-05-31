@@ -5,7 +5,7 @@
     <label>force push</label>
     <description>Project a concussive wave that staggers a target and throws them backward.</description>
     <iconPath>UI/Abilities/GR_ForcePush</iconPath>
-    <cooldownTicksRange>9000</cooldownTicksRange>
+    <cooldownTicksRange>3600~3600</cooldownTicksRange>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <writeCombatLog>true</writeCombatLog>

@@ -65,7 +65,6 @@
     <fixedLeaderKinds>
       <li>GR_AuthorityElite</li>
     </fixedLeaderKinds>
-    <hidden>false</hidden>
     <autoFlee>false</autoFlee>
     <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
     <naturalEnemy>true</naturalEnemy>
@@ -136,7 +135,6 @@
     <fixedLeaderKinds>
       <li>GR_AllianceSoldier</li>
     </fixedLeaderKinds>
-    <hidden>false</hidden>
     <autoFlee>false</autoFlee>
     <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
     <naturalEnemy>false</naturalEnemy>

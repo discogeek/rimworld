@@ -2,6 +2,7 @@
 
 An unofficial Star Wars-inspired RimWorld 1.6 mod. Adds galactic weapons, two factions, a Force push ability, a utility droid pawn kind, and a cold-biome pack beast.
 
+**Repository:** https://github.com/discogeek/rimworld  
 **Not affiliated with or endorsed by Lucasfilm Ltd.**
 
 ## Requirements
