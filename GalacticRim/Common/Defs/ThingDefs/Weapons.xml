@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>GR_Bullet_BlasterBolt</defName>
+    <label>blaster bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/GR_BlasterBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(0.8, 0.8)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>GR_Bullet_PulseBolt</defName>
+    <label>pulse bolt</label>
+    <graphicData>
+      <texPath>Things/Projectile/GR_PulseBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>(1.0, 1.0)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GR_HoldoutBlaster</defName>
+    <label>holdout blaster</label>
+    <description>A compact sidearm that fires superheated plasma bolts. Reliable at close range.</description>
+    <tradeTags>
+      <li>GR_ModWeapon</li>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/GR_HoldoutBlaster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponTags>
+      <li>GR_HoldoutBlaster</li>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>GR_BasicGalacticArms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GR_Bullet_BlasterBolt</defaultProjectile>
+        <warmupTime>0.35</warmupTime>
+        <range>22.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GR_PulseRifle</defName>
+    <label>pulse rifle</label>
+    <description>A standard-issue galactic pulse rifle with good range and stopping power.</description>
+    <tradeTags>
+      <li>GR_ModWeapon</li>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/GR_PulseRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponTags>
+      <li>GR_PulseRifle</li>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.8</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>GR_BasicGalacticArms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>GR_Bullet_PulseBolt</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

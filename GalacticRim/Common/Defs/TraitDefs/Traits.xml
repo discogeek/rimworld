@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>GR_ForceSensitive</defName>
+    <commonality>0.4</commonality>
+    <degreeDatas>
+      <li>
+        <label>force-sensitive</label>
+        <description>{PAWN_nameDef} feels a subtle current in living things — and can learn to push back with it.</description>
+        <statOffsets>
+          <PsychicSensitivity>0.50</PsychicSensitivity>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

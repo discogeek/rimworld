@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>GR_NamerPersonAuthority</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[AuthorityFirst] [AuthorityLast]</li>
+        <li>AuthorityFirst->Kael</li>
+        <li>AuthorityFirst->Vorn</li>
+        <li>AuthorityFirst->Tess</li>
+        <li>AuthorityFirst->Mira</li>
+        <li>AuthorityFirst->Dax</li>
+        <li>AuthorityLast->Striker</li>
+        <li>AuthorityLast->Voss</li>
+        <li>AuthorityLast->Korr</li>
+        <li>AuthorityLast->Tal</li>
+        <li>AuthorityLast->-7</li>
+        <li>AuthorityLast->-13</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>GR_NamerPersonAlliance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[AllianceFirst] [AllianceLast]</li>
+        <li>AllianceFirst->Jessa</li>
+        <li>AllianceFirst->Renn</li>
+        <li>AllianceFirst->Corin</li>
+        <li>AllianceFirst->Lyra</li>
+        <li>AllianceFirst->Pax</li>
+        <li>AllianceLast->Solo</li>
+        <li>AllianceLast->Vega</li>
+        <li>AllianceLast->Ash</li>
+        <li>AllianceLast->Rook</li>
+        <li>AllianceLast->Wind</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>GR_NamerFactionAuthority</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Galactic Authority [sector]</li>
+        <li>sector->Sector Command</li>
+        <li>sector->Occupation Force</li>
+        <li>sector->Garrison</li>
+        <li>sector->Pacification Unit</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>GR_NamerFactionAlliance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Free Systems [cell]</li>
+        <li>cell->Cell</li>
+        <li>cell->Outpost</li>
+        <li>cell->Command</li>
+        <li>cell->Brigade</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

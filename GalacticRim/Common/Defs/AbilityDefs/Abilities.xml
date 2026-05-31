@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef>
+    <defName>GR_ForcePush</defName>
+    <label>force push</label>
+    <description>Project a concussive wave that staggers a target and throws them backward.</description>
+    <iconPath>UI/Abilities/GR_ForcePush</iconPath>
+    <cooldownTicksRange>9000</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <writeCombatLog>true</writeCombatLog>
+    <showPsycastEffects>false</showPsycastEffects>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12.9</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="GalacticRim.CompProperties_AbilityForcePush">
+        <pushDistance>2</pushDistance>
+        <stunTicks>120</stunTicks>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

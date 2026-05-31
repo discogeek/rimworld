@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="GR_AuthorityBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>GR_GalacticAuthority</defaultFactionDef>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Soldier</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>GR_AuthorityApparel</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>GR_AuthorityTrooperCuirass</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>GR_PulseRifle</li>
+    </weaponTags>
+    <weaponMoney>800~1200</weaponMoney>
+    <combatPower>85</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>45</maxGenerationAge>
+    <invNutrition>2.55</invNutrition>
+    <nameMaker>GR_NamerPersonAuthority</nameMaker>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GR_AuthorityBase">
+    <defName>GR_AuthorityTrooper</defName>
+    <label>authority trooper</label>
+    <combatPower>90</combatPower>
+    <gearHealthRange>0.7~1.0</gearHealthRange>
+    <apparelMoney>400~700</apparelMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GR_AuthorityBase">
+    <defName>GR_AuthorityElite</defName>
+    <label>authority elite</label>
+    <combatPower>120</combatPower>
+    <gearHealthRange>0.9~1.0</gearHealthRange>
+    <apparelMoney>700~1200</apparelMoney>
+    <itemQuality>Good</itemQuality>
+  </PawnKindDef>
+
+  <PawnKindDef Name="GR_AllianceBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>GR_FreeSystemsAlliance</defaultFactionDef>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+      <li>GR_AllianceApparel</li>
+    </apparelTags>
+    <weaponTags>
+      <li>GR_HoldoutBlaster</li>
+      <li>GR_PulseRifle</li>
+    </weaponTags>
+    <weaponMoney>600~1000</weaponMoney>
+    <combatPower>75</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <invNutrition>2.55</invNutrition>
+    <nameMaker>GR_NamerPersonAlliance</nameMaker>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GR_AllianceBase">
+    <defName>GR_AllianceSoldier</defName>
+    <label>alliance soldier</label>
+    <combatPower>80</combatPower>
+    <gearHealthRange>0.6~1.0</gearHealthRange>
+    <apparelMoney>200~500</apparelMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GR_AllianceBase">
+    <defName>GR_AllianceTrader</defName>
+    <label>alliance quartermaster</label>
+    <trader>true</trader>
+    <combatPower>40</combatPower>
+    <gearHealthRange>0.8~1.0</gearHealthRange>
+    <apparelMoney>300~600</apparelMoney>
+    <apparelRequired>
+      <li>GR_JediInspiredRobe</li>
+    </apparelRequired>
+  </PawnKindDef>
+</Defs>

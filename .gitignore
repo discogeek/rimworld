@@ -1,0 +1,16 @@
+# Build output
+Source/bin/
+Source/obj/
+*.user
+*.suo
+
+# IDE
+.vs/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local RimWorld symlink targets (optional)
+ModsLink/

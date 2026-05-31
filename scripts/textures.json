@@ -1,0 +1,17 @@
+{
+  "_comment": "Decoded by scripts/generate_textures.ps1 into GalacticRim/Common/Textures. Replace with real art later.",
+  "fallbackPngBase64": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+  "paths": [
+    "Things/Item/Equipment/WeaponRanged/GR_HoldoutBlaster.png",
+    "Things/Item/Equipment/WeaponRanged/GR_PulseRifle.png",
+    "Things/Apparel/GR_JediInspiredRobe.png",
+    "Things/Apparel/GR_AuthorityTrooperCuirass.png",
+    "Things/Projectile/GR_BlasterBolt.png",
+    "Things/Projectile/GR_PulseBolt.png",
+    "UI/Abilities/GR_ForcePush.png",
+    "Things/Pawn/Animal/GR_PackBeast/GR_PackBeast_north.png",
+    "Things/Pawn/Animal/GR_PackBeast/GR_PackBeast_south.png",
+    "Things/Pawn/Animal/GR_PackBeast/GR_PackBeast_east.png",
+    "Things/Pawn/Animal/GR_PackBeast/GR_PackBeast_west.png"
+  ]
+}

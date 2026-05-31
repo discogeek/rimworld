@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
+    <value>
+      <GR_PackBeast>0.07</GR_PackBeast>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
+    <value>
+      <GR_PackBeast>0.05</GR_PackBeast>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName="IceSheet"]/wildAnimals</xpath>
+    <value>
+      <GR_PackBeast>0.04</GR_PackBeast>
+    </value>
+  </Operation>
+</Patch>

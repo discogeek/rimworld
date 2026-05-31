@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>GR_PackBeast</defName>
+    <label>pack beast</label>
+    <description>A shaggy cold-adapted draught animal from rim worlds. Hardy, stubborn, and valued for its insulated hide.</description>
+    <tradeTags>
+      <li>AnimalFarm</li>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+    <statBases>
+      <MoveSpeed>4.6</MoveSpeed>
+      <MarketValue>350</MarketValue>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+      <ComfyTemperatureMax>25</ComfyTemperatureMax>
+      <FilthRate>8</FilthRate>
+    </statBases>
+    <tools>
+      <li>
+        <label>headbutt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithHooves</body>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>1.8</baseBodySize>
+      <baseHealthScale>1.4</baseHealthScale>
+      <baseHungerRate>0.55</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+      <wildness>0.55</wildness>
+      <trainability>Intermediate</trainability>
+      <packAnimal>true</packAnimal>
+      <lifeExpectancy>18</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+          <soundDeath>Pawn_Muffalo_Death</soundDeath>
+          <soundCall>Pawn_Muffalo_Call</soundCall>
+          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+    <graphicData>
+      <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2.0</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>GR_PackBeast</defName>
+    <label>pack beast</label>
+    <race>GR_PackBeast</race>
+    <combatPower>70</combatPower>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
+    <wildGroupSize>2~5</wildGroupSize>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>GR_UtilityDroid</defName>
+    <label>utility droid</label>
+    <race>Human</race>
+    <defaultFactionDef>GR_FreeSystemsAlliance</defaultFactionDef>
+    <combatPower>35</combatPower>
+    <isFighter>false</isFighter>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelMoney>0~0</apparelMoney>
+    <weaponMoney>0~0</weaponMoney>
+    <techHediffsMoney>0~0</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <gearHealthRange>1~1</gearHealthRange>
+    <minGenerationAge>0</minGenerationAge>
+    <maxGenerationAge>100</maxGenerationAge>
+    <chronologicalAgeRange>1~200</chronologicalAgeRange>
+    <nameMaker>GR_NamerPersonAuthority</nameMaker>
+    <fixedGender>Male</fixedGender>
+    <skills>
+      <li>
+        <skill>Crafting</skill>
+        <range>4~8</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+</Defs>

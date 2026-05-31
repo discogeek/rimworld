@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>GR_JediInspiredRobe</defName>
+    <label>force attuned robe</label>
+    <description>Light layered robes favored by wandering mystics. The weave is oddly receptive to psychic resonance.</description>
+    <tradeTags>
+      <li>GR_AllianceApparel</li>
+      <li>Clothing</li>
+    </tradeTags>
+    <graphicData>
+      <texPath>Things/Apparel/GR_JediInspiredRobe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>0.8</Mass>
+      <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.25</PsychicSensitivity>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>GR_BasicGalacticArms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>GR_AllianceApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>GR_AuthorityTrooperCuirass</defName>
+    <label>authority trooper cuirass</label>
+    <description>Rigid composite plates issued to galactic authority troopers. Offers solid protection without full power armor bulk.</description>
+    <tradeTags>
+      <li>GR_AuthorityApparel</li>
+      <li>Armor</li>
+    </tradeTags>
+    <graphicData>
+      <texPath>Things/Apparel/GR_AuthorityTrooperCuirass</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>14000</WorkToMake>
+      <Mass>6</Mass>
+      <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>GR_BasicGalacticArms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>GR_AuthorityApparel</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+</Defs>
