@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ResearchProjectDef>
-  <defName>GR_BasicGalacticArms</defName>
-  <label>basic galactic arms</label>
-  <description>Reverse-engineer compact energy weapons and field armor from salvaged galactic technology.</description>
-  <baseCost>800</baseCost>
-  <techLevel>Industrial</techLevel>
-  <prerequisites>
-    <li>Gunsmithing</li>
-  </prerequisites>
-  <researchViewX>5.00</researchViewX>
-  <researchViewY>4.80</researchViewY>
-  <generalRules>
-    <rulesStrings>
-      <li>subject->galactic arms</li>
-      <li>subject_story->studied a cracked holdout blaster found in a wreck</li>
-      <li>subject_story->rebuilt a pulse emitter from scrap capacitors</li>
-      <li>subject_gerund->crafting galactic weaponry</li>
-    </rulesStrings>
-  </generalRules>
-</ResearchProjectDef>
+<Defs>
+  <ResearchProjectDef>
+    <defName>GR_BasicGalacticArms</defName>
+    <label>basic galactic arms</label>
+    <description>Reverse-engineer compact energy weapons and field armor from salvaged galactic technology.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Gunsmithing</li>
+    </prerequisites>
+    <researchViewX>5.00</researchViewX>
+    <researchViewY>4.80</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->galactic arms</li>
+        <li>subject_story->studied a cracked holdout blaster found in a wreck</li>
+        <li>subject_story->rebuilt a pulse emitter from scrap capacitors</li>
+        <li>subject_gerund->crafting galactic weaponry</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>

@@ -42,6 +42,7 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/GR_JediInspiredRobe</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
         <li>Middle</li>
@@ -97,6 +98,7 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/GR_AuthorityTrooperCuirass</wornGraphicPath>
       <layers>
         <li>Middle</li>
         <li>Shell</li>

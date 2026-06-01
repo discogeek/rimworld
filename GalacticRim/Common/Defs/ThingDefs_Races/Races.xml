@@ -14,6 +14,7 @@
       <ComfyTemperatureMin>-55</ComfyTemperatureMin>
       <ComfyTemperatureMax>25</ComfyTemperatureMax>
       <FilthRate>8</FilthRate>
+      <Wildness>0.55</Wildness>
     </statBases>
     <tools>
       <li>
@@ -52,7 +53,6 @@
       <baseHungerRate>0.55</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
-      <wildness>0.55</wildness>
       <trainability>Intermediate</trainability>
       <packAnimal>true</packAnimal>
       <lifeExpectancy>18</lifeExpectancy>
