@@ -16,6 +16,7 @@
       <FilthRate>8</FilthRate>
       <Wildness>0.55</Wildness>
     </statBases>
+    <uiIconScale>1.25</uiIconScale>
     <tools>
       <li>
         <label>headbutt</label>
@@ -78,11 +79,6 @@
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
-    <graphicData>
-      <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>2.0</drawSize>
-    </graphicData>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
@@ -92,6 +88,39 @@
     <combatPower>70</combatPower>
     <ecoSystemWeight>0.35</ecoSystemWeight>
     <wildGroupSize>2~5</wildGroupSize>
+    <lifeStages>
+      <li>
+        <label>pack beast calf</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
+          <drawSize>1.4</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
+          <drawSize>1.7</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
+          <drawSize>1.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
+          <drawSize>2.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/GR_PackBeast/GR_PackBeast</texPath>
+          <drawSize>2.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
   </PawnKindDef>
 
   <PawnKindDef>
