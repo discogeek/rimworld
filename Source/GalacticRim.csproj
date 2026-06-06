@@ -12,7 +12,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony" Version="2.4.1" PrivateAssets="all" />
+    <PackageReference Include="Lib.Harmony" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -25,4 +28,10 @@
       <Private>false</Private>
     </Reference>
   </ItemGroup>
+
+  <!-- Never ship Harmony in the mod folder; use the Harmony Workshop mod at runtime. -->
+  <Target Name="RemoveShippedHarmony" AfterTargets="Build">
+    <Delete Files="$(OutputPath)0Harmony.dll" ContinueOnError="true" />
+    <Delete Files="$(OutputPath)Harmony.dll" ContinueOnError="true" />
+  </Target>
 </Project>

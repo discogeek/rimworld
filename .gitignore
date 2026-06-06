@@ -14,3 +14,7 @@ Thumbs.db
 
 # Local RimWorld symlink targets (optional)
 ModsLink/
+
+# Never commit bundled Harmony copies
+GalacticRim/Assemblies/0Harmony.dll
+GalacticRim/Assemblies/Harmony.dll

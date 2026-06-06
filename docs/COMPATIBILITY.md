@@ -44,6 +44,7 @@ In the RimWorld mod list, drag **Galactic Rim** below VE and Dubs. Our `About/Ab
 - Galactic Rim does not modify power, plumbing, hygiene, or temperature systems.
 - Dubs Bad Hygiene, Rimatomics, Mint Menus, Performance Analyzer, etc. should coexist without changes.
 - Our mechanoid utility droid uses standard Biotech work types (`Hauling`, `Cleaning`, …) that Dubs does not override.
+- Galactic Rim **does not ship** `0Harmony.dll`; use the **Harmony** Workshop mod (avoids version conflicts with VE/Dubs stacks).
 
 ## What can still overlap (by design)
 
