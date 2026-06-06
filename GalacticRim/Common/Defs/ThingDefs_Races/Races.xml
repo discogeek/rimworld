@@ -122,38 +122,4 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
-  <PawnKindDef>
-    <defName>GR_UtilityDroid</defName>
-    <label>utility droid</label>
-    <race>Human</race>
-    <defaultFactionDef>GR_FreeSystemsAlliance</defaultFactionDef>
-    <combatPower>35</combatPower>
-    <isFighter>false</isFighter>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Offworld</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
-    <apparelMoney>0~0</apparelMoney>
-    <weaponMoney>0~0</weaponMoney>
-    <techHediffsMoney>0~0</techHediffsMoney>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-    <gearHealthRange>1~1</gearHealthRange>
-    <minGenerationAge>0</minGenerationAge>
-    <maxGenerationAge>100</maxGenerationAge>
-    <chronologicalAgeRange>1~200</chronologicalAgeRange>
-    <nameMaker>GR_NamerPersonAuthority</nameMaker>
-    <fixedGender>Male</fixedGender>
-    <skills>
-      <li>
-        <skill>Crafting</skill>
-        <range>4~8</range>
-      </li>
-    </skills>
-  </PawnKindDef>
 </Defs>

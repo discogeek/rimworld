@@ -43,6 +43,14 @@ The build script decodes placeholder PNGs from `scripts/textures.json`, optional
 New-Item -ItemType Junction -Path "$env:USERPROFILE\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Mods\GalacticRim" -Target "C:\Users\tim\Projects\rimworld\GalacticRim"
 ```
 
+## Compatibility (Vanilla Expanded, Dubs, etc.)
+
+Galactic Rim only **adds** content (`GR_*` defs). It does not retheme Empire, Rebels, or VE factions.
+
+- See **[docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)** for load order and what we avoid patching.
+- Put **Galactic Rim near the bottom** of your mod list, below VE Framework and Dubs mods.
+- Biome animal spawns use **additive** patches only.
+
 ## v0.1 content
 
 | Category | Content |

@@ -5,6 +5,8 @@
   <packageId>discogeek.galacticrim</packageId>
   <description>An unofficial Star Wars-inspired mod for RimWorld. Adds galactic weapons, factions, Force-sensitive colonists, utility droids, and cold-world pack beasts.
 
+Designed to load alongside Vanilla Expanded and Dubs mods — see docs/COMPATIBILITY.md in the repository.
+
 Not affiliated with or endorsed by Lucasfilm Ltd.</description>
   <supportedVersions>
     <li>1.6</li>
@@ -18,5 +20,23 @@ Not affiliated with or endorsed by Lucasfilm Ltd.</description>
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>Ludeon.RimWorld.Anomaly</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>OskarPotocki.VFE.Empire</li>
+    <li>VanillaExpanded.VFEArchitect</li>
+    <li>VanillaExpanded.VFEProduction</li>
+    <li>VanillaExpanded.VWE</li>
+    <li>VanillaExpanded.VWEL</li>
+    <li>VanillaExpanded.VWEFT</li>
+    <li>VanillaExpanded.VGeneticsE</li>
+    <li>Dubwise.DubsBadHygiene</li>
+    <li>Dubwise.Rimatomics</li>
+    <li>Dubwise.DubsMintMenus</li>
+    <li>Dubwise.DubsBreakMod</li>
+    <li>dubwise.dubsperformanceanalyzer</li>
   </loadAfter>
 </ModMetaData>
