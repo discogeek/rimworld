@@ -20,4 +20,22 @@
       </rulesStrings>
     </generalRules>
   </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>GR_RimAgriculture</defName>
+    <label>rim agriculture</label>
+    <description>Adapt native rim crops to colony hydroponics and dune-field plots. Unlocks biome-specific staple plants.</description>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->rim crops</li>
+        <li>subject_story->catalogued sunbulb tubers from a moisture farm wreck</li>
+        <li>subject_story->grafted shard cactus onto hydroponic trays</li>
+        <li>subject_gerund->domesticating rim-native plants</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
 </Defs>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>GR_Raw_Sunbulb</defName>
+    <label>sunbulb tuber</label>
+    <description>A dense, starchy tuber from sunbulb plants. A staple on arid rim worlds.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/GR_Raw_Sunbulb</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.015</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Vegetable</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought/>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>GR_Raw_ShardPod</defName>
+    <label>shard pod</label>
+    <description>Juicy pods harvested from shard cacti. Sweet but fibrous.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/GR_Raw_ShardPod</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.4</MarketValue>
+      <Mass>0.012</Mass>
+      <Nutrition>0.045</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Vegetable</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought/>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>18</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>GR_Raw_MossRoot</defName>
+    <label>moss-root knot</label>
+    <description>A hardy cold-climate root vegetable gathered from frost moss colonies.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/GR_Raw_MossRoot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+      <Mass>0.016</Mass>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Vegetable</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought/>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>35</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

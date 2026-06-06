@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <!-- Additive only: never replace wildAnimals lists used by other mods. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
+      <value>
+        <GR_Plant_MossRoot>0.06</GR_Plant_MossRoot>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+      <value>
+        <GR_Plant_MossRoot>0.04</GR_Plant_MossRoot>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/BiomeDef[defName="IceSheet"]/wildPlants</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/BiomeDef[defName="IceSheet"]/wildPlants</xpath>
+      <value>
+        <GR_Plant_MossRoot>0.03</GR_Plant_MossRoot>
+      </value>
+    </match>
+  </Operation>
+
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
     <match Class="PatchOperationAdd">

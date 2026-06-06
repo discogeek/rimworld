@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BiomeDef>
+    <defName>GR_DunesWorld</defName>
+    <label>dune world</label>
+    <description>A scorching desert of endless sand under harsh suns. Water is precious, soil is scarce, and hardy rim-native crops are the key to survival.</description>
+    <workerClass>GalacticRim.BiomeWorker_GR_DunesWorld</workerClass>
+    <settleWarning>Extreme heat and almost no natural water make farming difficult. Bring moisture reclamation plans.</settleWarning>
+    <allowFarmingCamps>false</allowFarmingCamps>
+    <animalDensity>0.25</animalDensity>
+    <plantDensity>0.03</plantDensity>
+    <settlementSelectionWeight>0.55</settlementSelectionWeight>
+    <campSelectionWeight>0.12</campSelectionWeight>
+    <movementDifficulty>1</movementDifficulty>
+    <lakeBeachTerrain>Sand</lakeBeachTerrain>
+    <riverbankTerrain>Sand</riverbankTerrain>
+    <mudTerrain>Sand</mudTerrain>
+    <texture>World/Biomes/ExtremeDesert</texture>
+    <forageability>0.15</forageability>
+    <foragedFood>GR_Raw_ShardPod</foragedFood>
+    <wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
+    <wildPlantRegrowDays>40</wildPlantRegrowDays>
+    <maxFishPopulation>180</maxFishPopulation>
+    <fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+      <freshwater_Common>
+        <Fish_Guppy MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Guppy>
+      </freshwater_Common>
+      <saltwater_Common>
+        <Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+      </saltwater_Common>
+      <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Hot</rareCatchesSetMaker>
+    </fishTypes>
+    <soundsAmbient>
+      <li>Ambient_Wind_Clear</li>
+    </soundsAmbient>
+    <diseaseMtbDays>95</diseaseMtbDays>
+    <isExtremeBiome>true</isExtremeBiome>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>70</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>35</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+    </diseases>
+    <terrainsByFertility>
+      <li>
+        <terrain>Sand</terrain>
+        <min>-999</min>
+        <max>0.55</max>
+      </li>
+      <li>
+        <terrain>SoftSand</terrain>
+        <min>0.55</min>
+        <max>0.85</max>
+      </li>
+      <li>
+        <terrain>Soil</terrain>
+        <min>0.85</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.045</perlinFrequency>
+        <minSize>10</minSize>
+        <thresholds>
+          <li>
+            <terrain>SoftSand</terrain>
+            <min>0.55</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+    <baseWeatherCommonalities>
+      <Clear>22</Clear>
+      <Rain>1</Rain>
+      <DryThunderstorm>2</DryThunderstorm>
+      <RainyThunderstorm>0.5</RainyThunderstorm>
+      <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">0.5</GrayPall>
+      <Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">2</Sandstorm>
+    </baseWeatherCommonalities>
+    <wildPlants>
+      <Plant_Grass>2</Plant_Grass>
+      <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">1</Plant_GrayGrass>
+      <Plant_PincushionCactus>0.8</Plant_PincushionCactus>
+      <Plant_SaguaroCactus>0.6</Plant_SaguaroCactus>
+      <Plant_Agave>0.35</Plant_Agave>
+      <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.7</Plant_PebbleCactus>
+      <GR_Plant_ShardCactus>0.9</GR_Plant_ShardCactus>
+      <GR_Plant_SunbulbTuber>0.15</GR_Plant_SunbulbTuber>
+    </wildPlants>
+    <wildAnimals>
+      <Dromedary>0.9</Dromedary>
+      <Iguana>1.0</Iguana>
+      <Fox_Fennec>0.25</Fox_Fennec>
+      <Ostrich>0.35</Ostrich>
+      <Emu>0.25</Emu>
+      <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.6</Vulture>
+      <MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.35</MonitorLizard>
+    </wildAnimals>
+    <allowedPackAnimals>
+      <li>Dromedary</li>
+    </allowedPackAnimals>
+  </BiomeDef>
+</Defs>

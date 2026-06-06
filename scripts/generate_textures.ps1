@@ -49,7 +49,13 @@ $itemIcons = @(
     @{ Path = 'Things/Apparel/GR_AuthorityTrooperCuirass.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 120, 125, 135); Border = [System.Drawing.Color]::FromArgb(255, 210, 215, 225) },
     @{ Path = 'Things/Projectile/GR_BlasterBolt.png'; W = 32; H = 32; Fill = [System.Drawing.Color]::FromArgb(255, 120, 220, 255); Border = [System.Drawing.Color]::FromArgb(255, 220, 250, 255) },
     @{ Path = 'Things/Projectile/GR_PulseBolt.png'; W = 32; H = 32; Fill = [System.Drawing.Color]::FromArgb(255, 255, 160, 80); Border = [System.Drawing.Color]::FromArgb(255, 255, 220, 180) },
-    @{ Path = 'UI/Abilities/GR_ForcePush.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 100, 180, 255); Border = [System.Drawing.Color]::FromArgb(255, 210, 240, 255) }
+    @{ Path = 'UI/Abilities/GR_ForcePush.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 100, 180, 255); Border = [System.Drawing.Color]::FromArgb(255, 210, 240, 255) },
+    @{ Path = 'Things/Plant/GR_SunbulbPlant.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 180, 150, 60); Border = [System.Drawing.Color]::FromArgb(255, 240, 210, 120) },
+    @{ Path = 'Things/Plant/GR_ShardCactus.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 80, 140, 70); Border = [System.Drawing.Color]::FromArgb(255, 160, 220, 140) },
+    @{ Path = 'Things/Plant/GR_MossRootPlant.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 100, 130, 90); Border = [System.Drawing.Color]::FromArgb(255, 180, 210, 160) },
+    @{ Path = 'Things/Item/Resource/PlantFoodRaw/GR_Raw_Sunbulb.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 210, 170, 70); Border = [System.Drawing.Color]::FromArgb(255, 250, 220, 150) },
+    @{ Path = 'Things/Item/Resource/PlantFoodRaw/GR_Raw_ShardPod.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 160, 90, 180); Border = [System.Drawing.Color]::FromArgb(255, 220, 180, 240) },
+    @{ Path = 'Things/Item/Resource/PlantFoodRaw/GR_Raw_MossRoot.png'; W = 128; H = 128; Fill = [System.Drawing.Color]::FromArgb(255, 140, 120, 80); Border = [System.Drawing.Color]::FromArgb(255, 210, 190, 150) }
 )
 
 foreach ($tex in $itemIcons) {

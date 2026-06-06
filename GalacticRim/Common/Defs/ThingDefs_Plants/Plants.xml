@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>GR_Plant_SunbulbTuber</defName>
+    <label>sunbulb plant</label>
+    <description>A heat-loving staple crop cultivated on dune worlds. The tuber stores water and starch; it withers quickly outside arid biomes.</description>
+    <graphicData>
+      <texPath>Things/Plant/GR_SunbulbPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.22</Nutrition>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <modExtensions>
+      <li Class="GalacticRim.GR_PlantBiomeExtension">
+        <allowedBiomeDefNames>
+          <li>GR_DunesWorld</li>
+          <li>Desert</li>
+          <li>ExtremeDesert</li>
+        </allowedBiomeDefNames>
+      </li>
+    </modExtensions>
+    <plant>
+      <fertilitySensitivity>0.25</fertilitySensitivity>
+      <fertilityMin>0.05</fertilityMin>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>GR_Raw_Sunbulb</harvestedThingDef>
+      <harvestYield>10</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>GR_RimAgriculture</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.15</topWindExposure>
+      <growDays>4.5</growDays>
+      <visualSizeRange>0.45~0.9</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>GR_Plant_ShardCactus</defName>
+    <label>shard cactus</label>
+    <description>A rim-native cactus that produces edible shard pods. Thrives only in scorching dry biomes.</description>
+    <graphicData>
+      <texPath>Things/Plant/GR_ShardCactus</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Nutrition>0.18</Nutrition>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>18</pathCost>
+    <ingestible />
+    <modExtensions>
+      <li Class="GalacticRim.GR_PlantBiomeExtension">
+        <allowedBiomeDefNames>
+          <li>GR_DunesWorld</li>
+          <li>Desert</li>
+          <li>ExtremeDesert</li>
+        </allowedBiomeDefNames>
+      </li>
+    </modExtensions>
+    <plant>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <fertilityMin>0.02</fertilityMin>
+      <dieIfLeafless>false</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>GR_Raw_ShardPod</harvestedThingDef>
+      <harvestYield>7</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>GR_RimAgriculture</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.05</topWindExposure>
+      <growDays>6.5</growDays>
+      <visualSizeRange>0.55~1.0</visualSizeRange>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>GR_Plant_MossRoot</defName>
+    <label>moss-root colony</label>
+    <description>A frost-hardy root crop from cold rim tundra. It refuses to take hold in warm or arid climates.</description>
+    <graphicData>
+      <texPath>Things/Plant/GR_MossRootPlant</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <Nutrition>0.24</Nutrition>
+    </statBases>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <modExtensions>
+      <li Class="GalacticRim.GR_PlantBiomeExtension">
+        <allowedBiomeDefNames>
+          <li>Tundra</li>
+          <li>BorealForest</li>
+          <li>IceSheet</li>
+          <li>ColdBog</li>
+        </allowedBiomeDefNames>
+      </li>
+    </modExtensions>
+    <plant>
+      <fertilitySensitivity>0.35</fertilitySensitivity>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>GR_Raw_MossRoot</harvestedThingDef>
+      <harvestYield>9</harvestYield>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <sowResearchPrerequisites>
+        <li>GR_RimAgriculture</li>
+      </sowResearchPrerequisites>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5.5</growDays>
+      <visualSizeRange>0.4~0.85</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <purpose>Food</purpose>
+      <humanFoodPlant>true</humanFoodPlant>
+    </plant>
+  </ThingDef>
+</Defs>
